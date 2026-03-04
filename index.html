@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>home page</title>
+<meta charset="utf8">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="school project logo">
+    
+    </header>
+            
+    <nav>
+        <ul>
+            <li><a href="index.html"; style="color: black;">Home</a></li>
+            <li><a href="about.html"; style="color: black;">About</a></li>
+            <li><a href="classes.html"; style="color: black;">Classes</a></li>
+            <li><a href="contact.html"; style="color: black;">Contact</a></li>
+            <li><a href="enrolment.html"; style="color: black;"> Enrolment</a></li>
+
+         </ul>
+    </nav>
+
+    <figure class="tablet">
+        <img src="images/taekwondo.jpg" alt="school project figure">
+    
+       
+
+    </figure>
+
+
+    <main>
+
+
+        <div class="row">
+            <div class="column left desktop">
+                <h2 style="color: rgb(38, 226, 38);">News Feed</h2>
+                <p style="color:white; size: 10px;" >Good Day!<br> this is curent events.<br>your feeds will be 
+                uploading daily<br>See you soon.</p>
+            </div>
+            
+            
+            
+            
+            <div class="column center">
+                    <h2 style="color: rgb(39, 202, 88);text-align: center;font-size: xx-large;">Welcome!</h2>
+                <p style="color:white; size: 10px;text-align: center;">hUt vero torqueo in utinam ludus laoreet ad ex.<br> Et saluto modo molior.
+
+Pala consequat defui<br> decet at accumsan adipiscing facilisis quis nibh.<br>
+
+Abluo probo dolore vulpes. Et multo nullus magna <br>inhibeo ex ex quidne conventio sudo pneum. Hendrerit duis vicis at<br> qui iaceo iaceo ut consectetuer reprobo meus. <br>Tincidunt nulla eros erat aliquip laoreet ingenium wisi valde eum. <br>Uxor vel qui validus comis aliquam nutus facilisi feugiat pala.<br>
+
+Singularis ullamcorper nimis validus <br>enim genitus demoveo voco et causa. Incassum incassum appellatio<br> pagus augue vindico at in. Quis qui distineo. In abigo consectetuer.<br> Esse populus virtus nisl tum ut nulla ideo vel qui.
+                </p>
+
+            </div>
+            <div class="column right tablet">
+                
+                
+                <style>
+                        .img-container {
+                          display: inline-flex; /* Allows width/height to be set and uses flex behavior */
+                            width: 360px;         /* Set the desired width of the span */
+                             height: 250px;        /* Set the desired height of the span */
+                             overflow: hidden;
+                         }
+                         .img-container img{
+                             width: auto;          /* Image takes the full width of its parent span */
+                                height: auto;         /* Image takes the full height of its parent span */
+                                 object-fit: cover; 
+                         }
+                        </style>
+
+    
+                   <span class="img-container" >  
+                    <img id="myimage" src="images/tk1.jpg" > 
+                    
+
+               </span>
+
+               
+            </div>
+             
+
+        </div>
+
+           <script>
+
+                
+                const images = ["images/tk1.jpg", "images/tk2.jpg", "images/tk3.jpg"];
+                const imageObj = document.getElementById("myimage");
+                let counter = 0;
+
+                function changeImage() {
+                    if (counter == images.length) {
+                     counter = 0; // Loop back to the first image
+                      }
+                                // Update the image source attribute
+                        imageObj.src = images[counter];
+                    counter++;
+                        }
+
+                                    // Call the changeImage function every 3000 milliseconds (3 seconds)
+                    setInterval(changeImage, 3000);
+
+
+            </script>
+
+
+
+
+    </main>
+    
+    
+    <footer>
+
+        <p>our location<br>
+                Girard Barbonneau<br>
+                 po # 55555
+            </p>
+        <p> phone Number: <a href="tel:7584820030">(758)4820030</a></p>
+        <p>Email address: <a href="mailto:augustewilliams@wascosaintlucia.com">own@thisthing.com</a></p>
+
+
+    </footer>
+</body>
+</html>

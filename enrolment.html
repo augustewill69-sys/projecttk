@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>enrolment</title>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript">
+    function calculate() {
+
+    var course =0;
+    var uniforms =0;
+    var total =0;
+
+    if(document.getElementById('adult').checked ==true){
+        course =50;
+
+    }
+    else if (document. getElementById("teen").checked){
+        course = 100;
+
+    }
+    else if (document.getElementById("child").checked){
+
+        course =150;
+
+    }
+
+    uniforms = 50 * document.getElementById("uniforms").value;
+
+    total = course + uniforms;
+    alert(
+       "your total cost is:$" + total
+    );
+
+    if (total> 150) { window.location.href = "audiocontect.html"; }
+}
+
+</script>
+
+
+</head>
+
+<body>
+    <header><img src="images/logo.png" alt="school project logo"></header>
+            
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+         </ul>
+    </nav>
+    <main>
+        
+        <table> 
+
+        <tr>
+            <td><label for="firstname">First Name</label></td>
+            <td><input type="text" id="firstname" name="firstname"></td>
+        </tr>
+
+        <tr>
+            <td><label for="lastname">Last Name</label></td>
+            <td><input type="text" id="lastname" name="lastname"></td>
+        </tr>
+        
+        <tr>
+            <td> <label for="email">email</label></td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+            
+       <tr>
+        <td><label for="phone">phone</label></td>
+        <td><input type="tel" id="phone" name="phone"></td>
+       </tr>     
+               
+               
+        </table>
+        
+        <table> 
+                <caption>Enroll</caption>
+
+                    <tr>
+                        <td>Adult</td>
+                        <td>$50</td>
+                        <td><input type="radio" id="adult" name="course" value="50">   </td>                     
+                    </tr>
+                    
+                    <tr>
+                        <td>teen</td>
+                        <td>$100</td>
+                        <td><input type="radio" id="teen" name="course"  value="100">  </td>
+                    </tr>
+
+                    <tr>
+                        <td>child </td>
+                        <td>$150</td>
+                        <td><input type="radio" id="child" name="course" value="150"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>uniforms</td>
+                        <td>$50</td>
+                        <td><input type="number" id="uniforms" min="0" value="0"></td>
+                     </tr>
+         </table>
+
+                        <p><input type="submit" id="submit" value="submit" onclick="calculate()"></p>
+                        <input type="reset" id="reset" value="reset" onclick="clearInterval"><br>
+                    
+                    
+    
+    </main>
+    
+    
+    <footer>
+
+        <p>our location<br>
+                Girard Barbonneau<br>
+                 po # 55555
+            </p>
+        <p> phone Number: <a href="tel:7584820030">(758)4820030</a></p>
+        <p>Email address: <a href="mailto:augustewilliams@wascosaintlucia.com">own@thisthing.com</a></p>
+
+
+    </footer>
+</body>
+</html>
