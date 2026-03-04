@@ -1,0 +1,279 @@
+
+body {
+    
+    background-image: linear-gradient(rgb(190, 123, 123),rgb(140, 140, 168),rgb(103, 113, 224));
+    font-family: sans-serif;
+}
+
+
+
+
+header img {
+    width: 50%;
+    height: auto;
+    max-width: 250px;
+
+}
+
+nav {
+    /*background-color: white;
+    border-top: solid .03em black;
+    border-bottom: solid 0.3em black; */
+    margin-bottom: 1em;
+    border-radius: 1.0em;
+    
+    font-weight: bold;
+    text-align: center;
+    
+ 
+}
+
+nav ul{
+    padding: 0;
+    margin-top: .02em;
+    margin-bottom: .02em;
+}
+nav ul :hover{
+    background-color: rgb(156, 238, 134);
+}
+
+
+
+
+nav ul li{
+    background-color:linear-gradient(rgb(190, 123, 123),rgb(140, 140, 168),rgb(103, 113, 224));
+    padding: .5em;
+    min-width: 11%;
+    margin: .25em;
+    list-style-type:none ; /*.this removes bullet points*/
+    font-size: large;
+    font-family:sans-serif ;
+    
+ 
+    
+}
+  
+/*nav ul li :hover {
+    color: rgba(212, 36, 86, 0.922); 
+    
+   
+    
+    
+}  */ 
+
+figure {
+    text-align: center;
+    
+}
+
+figure img { 
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+}
+main {
+        /*background-color: white;
+        border-top: solid .03em black;
+        border-bottom: solid 0.3em black; */
+        background-image: linear-gradient(rgb(192, 73, 73),rgb(148, 122, 122), rgb(213, 64, 64));
+        margin-bottom: 1em;
+        border-radius: 1.0em;
+}
+
+main .row:after {
+    content:"";
+    display: table;
+    clear: both;
+    
+}
+
+main div .column{
+    float:left;
+}
+
+main div .left{
+    padding: 0.5%;
+    width: 20%;
+    float: left;
+    
+
+}
+
+main div .center{
+
+   padding: 10px;
+    width: 35%;
+    
+}
+
+
+
+main div .right{
+    float:right;
+    padding: 0.5%;
+    width: 25%;
+    
+}
+
+
+.Schedule table {
+
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.Schedule caption {
+
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight:bold ;
+}
+
+.Schedule th, td {
+    border: 0.1em solid black;
+    padding: .05em;
+    text-align: center;
+}
+
+ .Schedule th {
+    background-color: blueviolet;
+    color: white;
+}
+
+ .Navigation{
+     /* display: inline-flex; */
+     width: 250px;         
+     height: 150px;        
+     overflow: hidden;
+     background-color: none; 
+     margin-top: 6%;
+     margin-left: 45%;
+   
+
+ }
+ 
+ .Navigation li {
+         
+  
+    font-family:sans-serif ;
+    
+    display: block;       /* Makes the whole link area clickable/box-shaped */
+  padding: 5px;           /* Adds space between the text and the border */
+  border: 1px solid #333;  /* Sets a 1px solid border with a dark color */
+  text-decoration: none; 
+  background-color: rgb(47, 43, 51);
+  text-align: center;
+  margin: .25em;
+  
+ }
+
+ .Navigation li:hover{
+    background-color: rgb(156, 238, 134);
+  
+}
+
+#enrollprice{
+    border: 0.1em solid black;
+    padding: .0.5em;
+
+}
+#enrollprice td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+/*nav ul li a{
+
+    color: white;
+    text-decoration: none;
+ this removes the underline from the hyperlink
+}*/
+footer {
+    padding: .20em;
+    background-image: linear-gradient(to right, rgb(103, 103, 224),rgb(140, 140, 168),rgb(103, 113, 224));
+    text-align: center;
+    font-size: 100%;
+    border-radius: 1.5em;
+    font-family: sans-serif;
+
+}
+
+/*begin mobile.*/
+
+@media screen and (max-width: 639px){
+    nav ul li {
+        border-radius: 1em;
+    }
+    .tablet{
+        display: none;
+
+    }
+    .desktop {
+        display: none;
+    }
+}
+/*end mobile.*//*begin mobile.*/
+
+/*begin tablet.*/
+
+@media screen and (min-width: 645px){
+    nav ul li {
+       display: inline-block;
+        border-radius: 1em;
+    }
+    .desktop{
+        display: none;
+    }
+}
+/*end tablets.*//*begin tablet.*/
+
+
+
+
+
+/*begin desktop.*/
+
+
+@media screen and (min-width: 961px){
+    
+
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+.desktop {
+    display: block;
+
+}
+
+    nav{
+        margin-top: -5.1em; /*this moves a nav eliment above where it normally be*/
+        width: 60%;
+        float: right; /*floats nav element to right side */
+    }
+    
+    main div .center{
+      padding: .5%;
+      width: 51%;
+
+      border-right: 0.3em solid black;
+      border-left: 0.3em solid black;
+        
+    }
+    
+}
+/*end desktop.*/
+
+
+
+
+
+
+
+
