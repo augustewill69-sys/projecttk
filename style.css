@@ -160,9 +160,9 @@ main div .right{
   
     font-family:sans-serif ;
     
-    display: block;       /* Makes the whole link area clickable/box-shaped */
-  padding: 5px;           /* Adds space between the text and the border */
-  border: 1px solid #333;  /* Sets a 1px solid border with a dark color */
+    display: block;       
+  padding: 5px;           
+  border: 1px solid #333; 
   text-decoration: none; 
   background-color: rgb(47, 43, 51);
   text-align: center;
@@ -193,6 +193,7 @@ main div .right{
     text-decoration: none;
  this removes the underline from the hyperlink
 }*/
+
 footer {
     padding: .20em;
     background-image: linear-gradient(to right, rgb(103, 103, 224),rgb(140, 140, 168),rgb(103, 113, 224));
@@ -203,7 +204,7 @@ footer {
 
 }
 
-/*begin mobile.*/
+
 
 @media screen and (max-width: 639px){
     nav ul li {
@@ -217,9 +218,9 @@ footer {
         display: none;
     }
 }
-/*end mobile.*//*begin mobile.*/
 
-/*begin tablet.*/
+
+
 
 @media screen and (min-width: 645px){
     nav ul li {
@@ -230,13 +231,13 @@ footer {
         display: none;
     }
 }
-/*end tablets.*//*begin tablet.*/
 
 
 
 
 
-/*begin desktop.*/
+
+
 
 
 @media screen and (min-width: 961px){
@@ -253,9 +254,9 @@ footer {
 }
 
     nav{
-        margin-top: -5.1em; /*this moves a nav eliment above where it normally be*/
+        margin-top: -5.1em; 
         width: 60%;
-        float: right; /*floats nav element to right side */
+        float: right; 
     }
     
     main div .center{
@@ -268,7 +269,8 @@ footer {
     }
     
 }
-/*end desktop.*/
+
+
 
 
 
