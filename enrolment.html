@@ -4,7 +4,7 @@
 <title>enrolment</title>
 <meta charset="utf8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <script type="text/javascript">
     function calculate() {
 
@@ -33,8 +33,19 @@
        "your total cost is:$" + total
     );
 
-    if (total> 150) { window.location.href = "audiocontect.html"; }
-}
+    if (total> 1) { window.location.href = "audiocontect.html"; }
+
+
+
+      }
+
+    function clearInput() {
+        document.getElementById("firstname").value = "";
+        document.getElementById("lastname").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+    }
+
 
 </script>
 
@@ -42,7 +53,7 @@
 </head>
 
 <body>
-    <header><img src="logo.png" alt="school project logo"></header>
+    <header><img src="images/logo.png" alt="school project logo"></header>
             
     <nav>
         <ul>
@@ -55,17 +66,17 @@
 
         <tr>
             <td><label for="firstname">First Name</label></td>
-            <td><input type="text" id="firstname" name="firstname"></td>
+            <td><input class="data-input"  type="text" id="firstname" name="firstname"></td>
         </tr>
 
         <tr>
             <td><label for="lastname">Last Name</label></td>
-            <td><input type="text" id="lastname" name="lastname"></td>
+            <td><input class="data-input"  type="text" id="lastname" name="lastname"></td>
         </tr>
         
         <tr>
             <td> <label for="email">email</label></td>
-            <td><input type="email" id="email" name="email"></td>
+            <td><input class="data-input" type="email" id="email" name="email"></td>
         </tr>
             
        <tr>
@@ -77,6 +88,7 @@
         </table>
         
         <table> 
+
                 <caption>Enroll</caption>
 
                     <tr>
@@ -99,17 +111,19 @@
                     </tr>
 
                     <tr>
-                        <td>uniforms</td>
+                        <td>Karati Gi</td>
                         <td>$50</td>
                         <td><input type="number" id="uniforms" min="0" value="0"></td>
                      </tr>
          </table>
 
-                        <p><input type="submit" id="submit" value="submit" onclick="calculate()"></p>
-                        <input type="reset" id="reset" value="reset" onclick="clearInterval"><br>
-                    
-                    
+                        <p><input type="submit" id="submit" value="submit" onclick="calculate()"></p>                                           
+                          
     
+       
+       
+                       <button onclick="clearInput()">Reset</button>
+
     </main>
     
     
@@ -125,5 +139,4 @@
 
     </footer>
 </body>
-
 </html>
